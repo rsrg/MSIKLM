@@ -281,12 +281,14 @@ int main(int argc, char** argv)
 
         if (dev != NULL)
         {
+            if (set_mode(dev, md) <= 0)
+                ret = -1;
+
             for (int i=0; i<num_regions && ret == 0; ++i)
+            {
                 if (set_color(dev, colors[i], i+1, br) <= 0)
                     ret = -1;
-
-            if (ret == 0 && set_mode(dev, md) <= 0)
-                ret = -1;
+            }
 
             hid_close(dev);
         }

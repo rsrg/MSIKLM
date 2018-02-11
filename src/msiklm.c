@@ -324,7 +324,7 @@ int set_color(hid_device* dev, struct color color, enum region region, enum brig
         buffer[4] = color.red;
         buffer[5] = color.green;
         buffer[6] = color.blue;
-        buffer[7] = 236; // EOR (end of request)
+        buffer[7] = 0; // EOR (end of request)
 
         ret = hid_send_feature_report(dev, buffer, 8);
 
@@ -338,7 +338,7 @@ int set_color(hid_device* dev, struct color color, enum region region, enum brig
         //buffer[4] = (byte)color;
         //buffer[5] = (byte)brightness;
         //buffer[6] = 0;
-        //buffer[7] = 236; // EOR (end of request)
+        //buffer[7] = 0; // EOR (end of request)
     }
     else
     {
@@ -367,7 +367,7 @@ int set_mode(hid_device* dev, enum mode mode)
     buffer[4] = 0;
     buffer[5] = 0;
     buffer[6] = 0;
-    buffer[7] = 236; // EOR (end of request)
+    buffer[7] = 0; // EOR (end of request)
 
     return hid_send_feature_report(dev, buffer, 8);
 }
