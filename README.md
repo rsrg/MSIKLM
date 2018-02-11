@@ -1,3 +1,7 @@
+# MSIKLM-GE70 - fork for notebooks MSI GE70.
+
+This is a fork of [MSIKLM](https://github.com/Gibtnix/MSIKLM) for notebooks MSI GE70.
+
 # GENERAL
 
 The MSI Keyboard Light Manager (MSIKLM) is an easy-to-use tool that allows to configure the
