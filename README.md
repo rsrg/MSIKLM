@@ -63,13 +63,6 @@ Whenever MSIKLM is used, it should always be run as root because otherwise, the 
 the keyboard is not possible, hence always use the sudo prefix (only 'msiklm help' will work as
 non-root).
 
-## Distribution package
-
-Currently, the only linux distribution providing an install method is Archlinux, via the AUR repository
-
- * Archlinux : https://aur.archlinux.org/packages/msiklm-git/
-
-
 # USABILITY
 
 MSIKLM is a pure command line application, however its keyboard illumination control functionality
